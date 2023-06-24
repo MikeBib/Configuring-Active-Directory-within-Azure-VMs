@@ -46,46 +46,49 @@ EXAMPLE 1B
 </p>
 <p>
 <br />
-- STEP 2 - SETTING DC-1 TO A STATIC IP ADDRESS
+STEP 2 - SETTING DC-1 TO A STATIC IP ADDRESS
 <br />
-For the “Administrator account” section ensure to create username and password credentials that will be required on future steps.
-</p>
-<br />
-EXAMPLE 1C
-<p>
-<img src="https://i.imgur.com/cdiXyVD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Then select “Networking” at the top of the page and make sure the inputs match EXAMPLE 1D then select “Review and Create”.
+We select “DC-1”  and on it’s home screen select “Networking” on the left hand side (EXAMPLE 2A).
 </p>
 <br />
-EXAMPLE 1D
+EXAMPLE 2A
 <p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LsCtO66.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-line
-</p>
-<br />
-EXAMPLE 1D
-<p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-line
+Once in the networking tab, we select “dc-1703” located to the right of Network Interface: (Example 2B)
 </p>
 <br />
-EXAMPLE 1D
+EXAMPLE 2B
 <p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/65iqYNy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-line
+Then select “IP configurations”
 </p>
 <br />
-EXAMPLE 1D
+EXAMPLE 2C
 <p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4NiCXGL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Then select “ipconfig1” which will lead to screen shown in EXAMPLE 2D. Here we select “Static” and we see that the private IP is “10.0.04”.
+</p>
+<br />
+EXAMPLE 2D
+<p>
+<img src="https://i.imgur.com/F3nJQBi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+STEP 3 - TESTING CONNECTING FROM CLIENT1 TO DC-1
+</p>
+<br />
+Logging remotely into DC-1 we will enable ICMPv4 traffic to be allowed in order to ping this DC-1 VM from Client-1 VM.
+</p>
+<br />
+EXAMPLE 3A
+<p>
+<img src="https://i.imgur.com/WPGcYfb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 line
