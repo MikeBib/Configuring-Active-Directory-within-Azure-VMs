@@ -113,3 +113,157 @@ EXAMPLE 4A
 <img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+<br />
+Select “Active Directory Domain Services” when getting to Server Roles as seen in EXAMPLE 4B.
+</p>
+<p>
+<br />
+EXAMPLE 4B
+<p>
+<img src="https://i.imgur.com/FxI823m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+When it is completed at the top right of the Server Manager window a yellow sign will display. We went to select “Promote this server to a domain controller” as show in EXAMPLE 4C.
+</p>
+<br />
+EXAMPLE 4C
+<p>
+<img src="https://i.imgur.com/E3f8jwV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+On the first page we will select “Add a new forest” and name the domain name as “Michael.com” for this exercise.  
+</p>
+<br />
+EXAMPLE 4D
+<p>
+<img src="https://i.imgur.com/B30NnZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+After this installs the DC-1 VM will restart and we will remote back in after it restarts. When we login we will use Michael.com\admin_user now that DC-1 is now a domain controller (EXAMPLE 4D).
+</p>
+<br />
+EXAMPLE 4E
+<p>
+<img src="https://i.imgur.com/axqcrd5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<br />
+STEP 5 - CREATE ADMIN AND NORMAL USER ACCOUNTS
+</p>
+<p>
+<br />
+Opening “Active Directory Users and Computers” we can begin to add accounts to the new directory that has been created. We will create two new folders named “_EMPOYEES” and “_ADMINS” shown in EXAMPLE 5A.
+</p>
+<p>
+<br />
+EXAMPLE 5A
+<p>
+<img src="https://i.imgur.com/jlVoKh8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We will create a new user named “Matt Hershey” who will be an admin. Right clicking on “_ADMINS” folder we will select “New” and “User” for this.  
+</p>
+<br />
+EXAMPLE 5B
+<p>
+<img src="https://i.imgur.com/v3YCTAD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+On the next page we create a password and unselect “User must change password at next logon” and select “Password never expires”. This is only for the purposes of this tutorial. When this is completed we we still need to give Matt Hershey admin authorization. The folder “Admin” is just a folder with a name at this point. 
+</p>
+<br />
+We will select the folder “_ADMINS” then right click on Matt Hershey and select properties. Then we can select “Member Of” then select “Add…” We can type in domain and check names. Several items will populate and then select “Domain Admins” group. 
+</p>
+<br />
+EXAMPLE 5C
+<p>
+<img src="https://i.imgur.com/ET33sEY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now we will log out from the original account of admin_user then log in as an actual admin using Matt Hershey’s account (matt_admin). We will use the username “Michael.com\matt_admin”.
+</p>
+<br />
+STEP 6 - JOIN CLIENT-1 TO DOMAIN
+</p>
+<br />
+We need to set Client-1 DNS settings to the DC-1’s private IP address. Logging into Client-1 we can right click on the widows icon (bottom left) and select settings. On the window we select “Rename this PC (advanced)” as seen in EXAMPLE 6A.
+</p>
+<br />
+EXAMPLE 6A
+<p>
+<img src="https://i.imgur.com/P4E6wzT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Select “Change” box, on the new window select “Domain” and I’ll enter “Michael.com” and select “OK” as shown in EXAMPLE 6B. An error will show up that it could not connect to the domain. This is because it is using a public DNS, we will fix this issue.
+</p>
+<br />
+EXAMPLE 6B
+<p>
+<img src="https://i.imgur.com/1Hc0NIj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Going into the Azure Portal we will edit the DNS settings there on the Client-1 VM. We will go to the DNS servers page. These steps include going to Azure Portal > Client-1 VM > Networking > Network Interace: client-1968 (blue link) > DNS Servers (left side). These steps are similar to what we did in Step 2. 
+</p>
+<br />
+Here we can edit the DNS server to be customized to the private IP Address of DC-1, see EXAMPLE 6C.
+</p>
+<br />
+EXAMPLE 6C
+<p>
+<img src="https://i.imgur.com/hyD5bmL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We will then restart Client-1, then login using admin_user since it is not connected to the domain yet. We will repeat the steps in EXAMPLE 6A and EXAMPLE 6B to return to the Computer Name/Domain Change window. We will then see a login window in EXAMPLE 6D instead of an error message like before now that the DNS has been set to the domain. We will then login with the admin account that we created on the server and us the domain name as show in EXAMPLE 6D.
+</p>
+<br />
+EXAMPLE 6D
+<p>
+<img src="https://i.imgur.com/l8zqrRb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+EXAMPLE 6E
+<p>
+<img src="https://i.imgur.com/qfDVKHh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+The Client-1 VM will then need to restart after this configuration. 
+</p>
+<br />
+STEP 7 - SETTING UP REMOTE DESTKOP FOR NON-ADMIN USERS ON CLIENT 1
+</p>
+<br />
+We will then log back in and open settings on Client-1, select “Remote Desktop” then “Select users that can remotely access this PC”. Here we will add the group “Domain Users” so that any of the users can log into this computer. When this is completed it will look like EXAMPLE 7A.
+</p>
+<br />
+EXAMPLE 7A
+<p>
+<img src="https://imgur.com/a/zBnzVzB" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+END OF TUTORIAL 
+</p>
+<br />
+EXAMPLE 4A
+<p>
+<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+On DC-1 
+</p>
+<br />
+EXAMPLE 4A
+<p>
+<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+On DC-1 
+</p>
+<br />
+EXAMPLE 4A
+<p>
+<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
