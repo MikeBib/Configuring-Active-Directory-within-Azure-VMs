@@ -1,10 +1,10 @@
-# Configuring-Active-Directory-within-Azure-VMs
+# Configuring Active Directory within Azure VMs #
 <p align="center">
 <img src="https://i.imgur.com/p3WJmAI.png" alt="osTicket logo"/>
 </p>
 
 <h1>Azure Active Directory - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines setting up Azure Directory on a server and a Client that can remote in. <br />
 
 <h2>Environments and Technologies Used</h2>
 
