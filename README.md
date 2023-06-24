@@ -69,7 +69,7 @@ Then select “IP configurations” shown in EXAMPLE 2C.
 <br />
 EXAMPLE 2C
 <p>
-<img src="https://i.imgur.com/4NiCXGL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4NiCXGL.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <br />
