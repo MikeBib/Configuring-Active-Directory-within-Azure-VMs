@@ -102,6 +102,8 @@ EXAMPLE 3B
 <p>
 <br />
 STEP 4 - INSTALLING ACTIVE DIRECTORY
+</p>
+<p>
 <br />
 On DC-1 we install Active Directory by first going to the Server Manager and selecting Dashboard and then “Add roles and features” as shown in EXAMPLE 4A.
 </p>
