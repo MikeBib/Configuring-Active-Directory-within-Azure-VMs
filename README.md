@@ -31,7 +31,7 @@ This tutorial outlines setting up Azure Directory on a server and a Client that 
 STEP 1 - CREATING THE VIRTUAL MACHINES THROUGH AZURE
 <p>
 <br />
-I will use two virtual machines for this lab. The first one will be named “DC-1” which will be the server VM and the other will be named “Client-1”. See EXAMPLE 1A and 1B for designated settings on portal.azure.com. I also created login in credentials and recorded them for this lab (admin_user).
+This tutorial will use two virtual machines for this lab. The first one will be named “DC-1” which will be the server VM and the other will be named “Client-1”. See EXAMPLE 1A and 1B for designated settings on portal.azure.com. I also created login in credentials and recorded them for this lab (admin_user).
 <p>
 EXAMPLE 1A
 <p>
