@@ -18,12 +18,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- STEP 1 - Creating the Virtual Machine Through Azure
-- STEP 2
-- STEP 3
-- STEP 4
-- STEP 5
-- STEP 6
+- STEP 1 - CREATING THE VIRTUAL MACHINE THROUGH AZURE
+- STEP 2 - SETTING DC-1 TO A STATIC IP ADDRESS
+- STEP 3 - TESTING CONNECTING FROM CLIENT1 TO DC-1
+- STEP 4 - INSTALLING ACTIVE DIRECTORY
+- STEP 5 - CREATE ADMIN AND NORMAL USER ACCOUNTS
+- STEP 6 - JOIN CLIENT-1 TO DOMAIN
+- STEP 7 - SETTING UP REMOTE DESTKOP FOR NON-ADMIN USERS ON CLIENT 1
 
 <h2>Installation Steps</h2>
 
