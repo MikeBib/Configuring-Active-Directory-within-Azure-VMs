@@ -53,7 +53,7 @@ We select “DC-1”  and on it’s home screen select “Networking” on the l
 <br />
 EXAMPLE 2A
 <p>
-<img src="https://i.imgur.com/LsCtO66.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LsCtO66.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Once in the networking tab, we select “dc-1703” located to the right of Network Interface: (Example 2B)
