@@ -9,6 +9,8 @@ This tutorial outlines setting up Azure Directory on a server and one client tha
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
+- Windows 10
+- Windows Server
 - Remote Desktop
 - Internet Information Services (IIS)
 - Azure Active Directory
@@ -17,7 +19,7 @@ This tutorial outlines setting up Azure Directory on a server and one client tha
 
 - Windows 10</b> (21H2)
 
-<h2>List of Steps</h2>
+<h2>High Level Deployment and Configuration Steps</h2>
 
 - STEP 1 - CREATING THE VIRTUAL MACHINES THROUGH AZURE
 - STEP 2 - SETTING DC-1 TO A STATIC IP ADDRESS
