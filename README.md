@@ -92,19 +92,22 @@ EXAMPLE 3A
 <img src="https://i.imgur.com/WPGcYfb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-line
+We can successfully ping from Client-1 to DC-1 from EXAMPLE 3B.
 </p>
 <br />
-EXAMPLE 1D
+EXAMPLE 3B
 <p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DGzh7G3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-line
+<br />
+STEP 4 - INSTALLING ACTIVE DIRECTORY
+<br />
+On DC-1 we install Active Directory by first going to the Server Manager and selecting Dashboard and then “Add roles and features” as shown in EXAMPLE 4A.
 </p>
 <br />
-EXAMPLE 1D
+EXAMPLE 4A
 <p>
-<img src="https://i.imgur.com/jzxbosV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
