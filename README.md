@@ -81,6 +81,7 @@ EXAMPLE 2D
 <img src="https://i.imgur.com/F3nJQBi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+<br />
 STEP 3 - TESTING CONNECTING FROM CLIENT1 TO DC-1
 </p>
 <br />
