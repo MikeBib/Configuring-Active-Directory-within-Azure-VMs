@@ -4,41 +4,42 @@
 </p>
 
 <h1>Azure Active Directory - Prerequisites and Installation</h1>
-This tutorial outlines setting up Azure Directory on a server and a Client that can remote in. <br />
+This tutorial outlines setting up Azure Directory on a server and one client that can remote in. <br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- Azure Active Directory
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>List of Steps</h2>
 
 - STEP 1 - CREATING THE VIRTUAL MACHINES THROUGH AZURE
 - STEP 2 - SETTING DC-1 TO A STATIC IP ADDRESS
-- STEP 3 - TESTING CONNECTING FROM CLIENT1 TO DC-1
+- STEP 3 - TESTING CONNECTING FROM CLIENT-1 TO DC-1
 - STEP 4 - INSTALLING ACTIVE DIRECTORY
 - STEP 5 - CREATE ADMIN AND NORMAL USER ACCOUNTS
 - STEP 6 - JOIN CLIENT-1 TO DOMAIN
 - STEP 7 - SETTING UP REMOTE DESTKOP FOR NON-ADMIN USERS ON CLIENT 1
 
-<h2>Installation Steps</h2>
+<h2>Installation</h2>
 
 STEP 1 - CREATING THE VIRTUAL MACHINES THROUGH AZURE
 <p>
 <br />
-This tutorial will use two virtual machines for this lab. The first one will be named “DC-1” which will be the server VM and the other will be named “Client-1”. See EXAMPLE 1A and 1B for designated settings on portal.azure.com. I also created login in credentials and recorded them for this lab (admin_user).
+This tutorial will use two virtual machines for this lab. The first one will be named “DC-1” which will be the server VM and the other will be named “Client-1”. See EXAMPLE 1A and 1B for designated settings on portal.azure.com. Login credentials were created and recorded for this lab (admin_user).
 <p>
 EXAMPLE 1A
 <p>
 <img src="https://i.imgur.com/kh9Qcgw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The next web page you will input several items as shown in EXAMPLE 1B & 1C such as Resource Group, Virtual Machine etc. Ensure to have the inputs be the same as the example photo.
+The next web page several items are input as shown in EXAMPLE 1B & 1C such as Resource Group, Virtual Machine, etc. Ensure to have the inputs be the same as the example photo.
 </p>
 EXAMPLE 1B
 <p>
@@ -56,7 +57,8 @@ EXAMPLE 2A
 <img src="https://i.imgur.com/LsCtO66.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once in the networking tab, we select “dc-1703” located to the right of Network Interface: (Example 2B)
+<br />
+Once in the networking tab, we select “dc-1703” located to the right of Network Interface, see Example 2B.
 </p>
 <br />
 EXAMPLE 2B
@@ -64,6 +66,7 @@ EXAMPLE 2B
 <img src="https://i.imgur.com/65iqYNy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+<br />
 Then select “IP configurations” shown in EXAMPLE 2C.
 </p>
 <br />
@@ -73,7 +76,7 @@ EXAMPLE 2C
 </p>
 <p>
 <br />
-Then select “ipconfig1” which will lead to screen shown in EXAMPLE 2D. Here we select “Static” and we see that the private IP is “10.0.04”.
+Then select “ipconfig1” (towards the bottom) which will lead to screen shown in EXAMPLE 2D. Here we select “Static” and we see that the private IP is “10.0.04” (this is the private IP for DC-1).
 </p>
 <br />
 EXAMPLE 2D
@@ -82,7 +85,7 @@ EXAMPLE 2D
 </p>
 <p>
 <br />
-STEP 3 - TESTING CONNECTING FROM CLIENT1 TO DC-1
+STEP 3 - TESTING CONNECTING FROM CLIENT-1 TO DC-1
 </p>
 <br />
 Logging remotely into DC-1 we will enable ICMPv4 traffic to be allowed in order to ping this DC-1 VM from Client-1 VM.
@@ -115,7 +118,7 @@ EXAMPLE 4A
 </p>
 <p>
 <br />
-Select “Active Directory Domain Services” when getting to Server Roles as seen in EXAMPLE 4B.
+Select “Active Directory Domain Services” when getting to Server Roles as seen in EXAMPLE 4B. Go through the installation steps without additional configurations.
 </p>
 <p>
 <br />
