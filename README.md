@@ -97,7 +97,7 @@ We can successfully ping from Client-1 to DC-1 from EXAMPLE 3B.
 <br />
 EXAMPLE 3B
 <p>
-<img src="https://i.imgur.com/DGzh7G3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DGzh7G3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <br />
@@ -128,7 +128,7 @@ When it is completed at the top right of the Server Manager window a yellow sign
 <br />
 EXAMPLE 4C
 <p>
-<img src="https://i.imgur.com/E3f8jwV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/E3f8jwV.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 On the first page we will select “Add a new forest” and name the domain name as “Michael.com” for this exercise.  
@@ -144,7 +144,7 @@ After this installs the DC-1 VM will restart and we will remote back in after it
 <br />
 EXAMPLE 4E
 <p>
-<img src="https://i.imgur.com/axqcrd5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/axqcrd5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <br />
@@ -199,7 +199,7 @@ Select “Change” box, on the new window select “Domain” and I’ll enter 
 <br />
 EXAMPLE 6B
 <p>
-<img src="https://i.imgur.com/1Hc0NIj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1Hc0NIj.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Going into the Azure Portal we will edit the DNS settings there on the Client-1 VM. We will go to the DNS servers page. These steps include going to Azure Portal > Client-1 VM > Networking > Network Interace: client-1968 (blue link) > DNS Servers (left side). These steps are similar to what we did in Step 2. 
@@ -226,7 +226,7 @@ EXAMPLE 6D
 <br />
 EXAMPLE 6E
 <p>
-<img src="https://i.imgur.com/qfDVKHh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qfDVKHh.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 The Client-1 VM will then need to restart after this configuration. 
@@ -240,30 +240,12 @@ We will then log back in and open settings on Client-1, select “Remote Desktop
 <br />
 EXAMPLE 7A
 <p>
-<img src="https://imgur.com/a/zBnzVzB" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3HwGHX5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 END OF TUTORIAL 
 </p>
 <br />
-EXAMPLE 4A
-<p>
-<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-On DC-1 
-</p>
-<br />
-EXAMPLE 4A
-<p>
-<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-On DC-1 
-</p>
-<br />
-EXAMPLE 4A
-<p>
-<img src="https://i.imgur.com/NPQ6vEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
