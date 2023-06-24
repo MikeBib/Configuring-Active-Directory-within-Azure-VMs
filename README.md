@@ -64,7 +64,7 @@ EXAMPLE 2B
 <img src="https://i.imgur.com/65iqYNy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then select “IP configurations”
+Then select “IP configurations” shown in EXAMPLE 2C.
 </p>
 <br />
 EXAMPLE 2C
@@ -72,6 +72,7 @@ EXAMPLE 2C
 <img src="https://i.imgur.com/4NiCXGL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+<br />
 Then select “ipconfig1” which will lead to screen shown in EXAMPLE 2D. Here we select “Static” and we see that the private IP is “10.0.04”.
 </p>
 <br />
