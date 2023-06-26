@@ -1,4 +1,4 @@
-# Configuring Active Directory within Azure VMs #
+# Implementing Active Directory within Azure VMs #
 <p align="center">
 <img src="https://i.imgur.com/p3WJmAI.png" alt="osTicket logo"/>
 </p>
